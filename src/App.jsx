@@ -56,7 +56,7 @@ function MainPage() {
 
 function App() {
   return (
-    <BrowserRouter basename="/Banking-Web-site">
+    <BrowserRouter basename="/BankWebSite">
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/careers" element={<CareersPage />} />
