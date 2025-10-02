@@ -94,9 +94,8 @@
   margin-bottom: 24px;
 }
 .products__icon {
-  display: table;
+  display: flex;
   margin: 0 auto;
-  /* margin-bottom: 24px; */
 }
 .products__item-title {
   text-align: center;

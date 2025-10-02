@@ -64,7 +64,6 @@
 }
 .features__tab-btn--active,
 .features__tab-btn:hover {
-  background: #181f1b;
   color: #caff33;
 }
 .features__cards {
