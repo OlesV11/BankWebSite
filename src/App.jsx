@@ -9,6 +9,7 @@ import Testimonials from "./partials/Testimonials";
 import Cta from "./partials/Cta";
 import Footer from "./partials/Footer";
 import CareersPage from "./pages/CareersPage";
+import AboutPage from "./pages/AboutPage";
 import "./App.css";
 
 import React, { useState } from "react";
@@ -60,6 +61,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );

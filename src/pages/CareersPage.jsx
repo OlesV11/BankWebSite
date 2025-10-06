@@ -8,10 +8,19 @@ import Frequently from "../partials/Frequently";
 import Cta from "../partials/Cta";
 import Footer from "../partials/Footer";
 
+import React, { useState } from "react";
+
 export default function CareersPage() {
+  const [signupOpen, setSignupOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   return (
     <>
-      <Header />
+      <Header
+        signupOpen={signupOpen}
+        setSignupOpen={setSignupOpen}
+        loginOpen={loginOpen}
+        setLoginOpen={setLoginOpen}
+      />
       <CareersHero />
       <CareersValues />
       <CareersBenefits />

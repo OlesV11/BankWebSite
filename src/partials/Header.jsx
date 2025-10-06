@@ -43,7 +43,7 @@ export default function Header({
         <nav className="header__nav">
           <Link to="/">Home</Link>
           <Link to="/careers">Careers</Link>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
           <a href="#security">Security</a>
         </nav>
         <div className="header__actions">

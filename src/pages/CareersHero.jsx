@@ -1,6 +1,4 @@
 import "../styles/careers-hero.css";
-import peopletwo from "../photo/peopletwo.png";
-
 export default function CareersHero() {
   return (
     <section className="careers__hero__section">
@@ -23,7 +21,7 @@ export default function CareersHero() {
           </div>
           <div className="careers__hero__imgwrap">
             <img
-              src={peopletwo}
+              src="public/assets/peopletwo.png"
               alt="Team meeting"
               className="careers__hero__img"
             />
