@@ -6,7 +6,7 @@ export default function CareersHero() {
         <div className="careers__hero__flex">
           <div className="careers__hero__contain">
             <h1 className="careers__title">
-              Welcome to <span className="careers__title__span">YourBank</span>{" "}
+              Welcome to <span className="careers__title__span">YourBank</span>
               Careers!
             </h1>
             <p className="careers__descr">
@@ -21,7 +21,7 @@ export default function CareersHero() {
           </div>
           <div className="careers__hero__imgwrap">
             <img
-              src="public/assets/peopletwo.png"
+              src="/BankWebSite/assets/peopletwo.png"
               alt="Team meeting"
               className="careers__hero__img"
             />
