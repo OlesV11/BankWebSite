@@ -15,7 +15,7 @@ export default function AboutMission() {
           <div className="about-mission__card about-mission__card--horizontal">
             <div className="about-mission__imgwrap">
               <img
-                src="public/assets/mission-flower.png"
+                src="/assets/mission-flower.png"
                 alt="Mission"
                 className="about-mission__img"
               />
@@ -51,7 +51,7 @@ export default function AboutMission() {
             </div>
             <div className="about-mission__imgwrap">
               <img
-                src="public/assets/mission-eye.png"
+                src="/assets/mission-eye.png"
                 alt="Vision"
                 className="about-mission__img"
               />
