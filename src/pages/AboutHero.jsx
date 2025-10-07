@@ -25,7 +25,7 @@ export default function AboutHero() {
           </div>
           <div>
             <img
-              src="public/assets/about-us.png"
+              src="/BankWebSite/assets/about-us.png"
               alt="YourBank team in front of office building"
               className="about-hero-img"
               width="715"
