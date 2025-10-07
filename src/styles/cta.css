@@ -43,7 +43,7 @@
   box-shadow: 0 2px 8px 0 rgba(202, 255, 51, 0.1);
 }
 .cta__btn:hover {
-  background: #eaff7b;
+  background: #b3e636;
   color: #181f1b;
 }
 @media (max-width: 900px) {

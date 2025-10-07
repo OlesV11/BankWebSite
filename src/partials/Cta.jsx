@@ -1,6 +1,6 @@
 import "../styles/cta.css";
 
-export default function Cta() {
+export default function Cta({ setSignupOpen }) {
   return (
     <section className="cta">
       <div className="cta__container">
@@ -16,7 +16,9 @@ export default function Cta() {
           </p>
         </div>
         <div className="cta__action">
-          <button className="cta__btn">Open Account</button>
+          <button className="cta__btn" onClick={() => setSignupOpen(true)}>
+            Open Account
+          </button>
         </div>
       </div>
     </section>

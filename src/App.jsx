@@ -31,7 +31,7 @@ function MainPage() {
       <Features />
       <Frequently />
       <Testimonials />
-      <Cta />
+      <Cta setSignupOpen={setSignupOpen} />
       <Footer />
       {/* Модальні вікна */}
       {/* Якщо Header не рендерит модалки,  */}

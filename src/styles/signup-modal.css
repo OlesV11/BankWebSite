@@ -1,7 +1,7 @@
-/* Контейнер для поля пароля с глазом */
+/* Контейнер для поля пароля з оком */
 .signup-modal__password-wrapper {
   position: relative;
-  flex: 1.161;
+  flex: 1.21;
   display: flex;
   align-items: center;
 }
