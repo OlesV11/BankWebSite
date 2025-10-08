@@ -44,7 +44,7 @@ export default function Header({
           <Link to="/">Home</Link>
           <Link to="/careers">Careers</Link>
           <Link to="/about">About</Link>
-          <a href="#security">Security</a>
+          <Link to="/security">Security</Link>
         </nav>
         <div className="header__actions">
           <button

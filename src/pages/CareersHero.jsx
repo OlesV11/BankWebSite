@@ -19,13 +19,12 @@ export default function CareersHero() {
               the future of banking.
             </p>
           </div>
-          <div className="careers__hero__imgwrap">
+          <div>
             <img
               src="/BankWebSite/assets/peopletwo.png"
               alt="Team meeting"
               className="careers__hero__img"
             />
-            <div className="careers__hero__imgoverlay"></div>
           </div>
         </div>
       </div>

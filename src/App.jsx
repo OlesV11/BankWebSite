@@ -10,6 +10,7 @@ import Cta from "./partials/Cta";
 import Footer from "./partials/Footer";
 import CareersPage from "./pages/CareersPage";
 import AboutPage from "./pages/AboutPage";
+import SecurityPage from "./pages/SecurityPage";
 import "./App.css";
 
 import React, { useState } from "react";
@@ -62,6 +63,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/security" element={<SecurityPage />} />
       </Routes>
     </BrowserRouter>
   );

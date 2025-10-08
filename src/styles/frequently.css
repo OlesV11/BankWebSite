@@ -7,10 +7,6 @@
   transform: translateY(-8px) scale(1.025);
   border-color: #caff33;
 }
-
-.frequently {
-  padding: 48px 0;
-}
 .frequently__title {
   font-size: 2.2rem;
   font-weight: 700;
@@ -82,9 +78,4 @@
   background: #232923;
   color: #caff33;
   border-color: #caff33;
-}
-@media (max-width: 900px) {
-  .frequently__grid {
-    grid-template-columns: 1fr;
-  }
 }

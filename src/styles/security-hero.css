@@ -1,9 +1,7 @@
-.careers__hero__section {
-  padding-top: 50px;
-  padding-bottom: 120px;
+.security-hero {
+  padding: 50px 0 0 0;
 }
-
-.careers__hero__flex {
+.security-bg {
   border-radius: 20px;
   padding: 40px;
   width: 1279px;
@@ -11,7 +9,7 @@
   background-color: #1c1c1c;
   position: relative;
 }
-.careers__hero__contain {
+.security-thumb {
   border-radius: 20px 0 60px 20px;
   padding: 60px;
   width: 658px;
@@ -20,29 +18,24 @@
   position: absolute;
   z-index: 1;
 }
-
-.careers__hero__img {
-  position: absolute;
-  top: 50%;
-  right: 400px;
-  transform: translate(50%, -50%);
-}
-.careers__hero__imgoverlay {
-  position: absolute;
-}
-.careers__title {
+.security-title {
   font-weight: 500;
   font-size: 48px;
   line-height: 1.3;
   color: #fff;
 }
-
-.careers__title__span {
+.security-title-span {
   color: #caff33;
 }
-.careers__descr {
+.security-desc {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   color: #b3b3b3;
+}
+.security-hero-img {
+  position: absolute;
+  top: 50%;
+  right: 400px;
+  transform: translate(50%, -50%);
 }
