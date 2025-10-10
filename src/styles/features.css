@@ -46,7 +46,7 @@
   border-radius: 100px;
   padding: 14px 20px;
   min-width: 165px;
-  height: 49px;
+  height: auto;
 }
 .features__tab-btn {
   width: 100%;
