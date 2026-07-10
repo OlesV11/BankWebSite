@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/footer.css";
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="footer__container">
         <div className="footer__logo">
           {/* SVG логотип */}
-          <span className="footer__logo-img" aria-label="Логотип">
+          <Link to="/" className="footer__logo-img" aria-label="YourBank home">
             <svg
               width="29"
               height="29"
@@ -35,21 +36,21 @@ export default function Footer() {
                 fill="#CAFF33"
               />
             </svg>
-          </span>
+          </Link>
         </div>
         <nav className="footer__nav" aria-label="Footer navigation">
-          <a href="#features" className="footer__nav-link">
+          <Link to="/" className="footer__nav-link">
             Home
-          </a>
-          <a href="#cases" className="footer__nav-link">
+          </Link>
+          <Link to="/careers" className="footer__nav-link">
             Careers
-          </a>
-          <a href="#faq" className="footer__nav-link">
+          </Link>
+          <Link to="/about" className="footer__nav-link">
             About
-          </a>
-          <a href="#testimonials" className="footer__nav-link">
+          </Link>
+          <Link to="/security" className="footer__nav-link">
             Security
-          </a>
+          </Link>
         </nav>
         <hr className="footer__divider" />
         <div className="footer__contacts">

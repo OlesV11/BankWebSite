@@ -6,8 +6,8 @@
   background-color: #1c1c1c;
   border-radius: 20px;
   padding: 40px;
-  width: 1279px;
-  height: 648px;
+  width: 100%;
+  min-height: 648px;
   position: relative;
 }
 .about-thumb {
@@ -16,7 +16,7 @@
   background-color: #1a1a1a;
   border-radius: 20px 0 60px 20px;
   padding: 41px;
-  width: 658px;
+  width: min(100%, 658px);
   position: absolute;
   z-index: 1;
 }
@@ -48,6 +48,41 @@
 .about-hero-img {
   position: absolute;
   top: 50%;
-  right: 400px;
+  right: min(32%, 400px);
   transform: translate(50%, -49%);
+}
+
+@media (max-width: 1024px) {
+  .about-bg {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 0;
+  }
+  .about-thumb,
+  .about-hero-img {
+    position: static;
+    transform: none;
+  }
+  .about-thumb {
+    padding: 32px;
+  }
+  .about-hero-img {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-bg,
+  .about-thumb {
+    padding: 20px;
+  }
+  .about-title {
+    font-size: 34px;
+  }
+  .about-hero-desc {
+    font-size: 16px;
+  }
 }

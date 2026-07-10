@@ -62,3 +62,25 @@
   line-height: 1.5;
   color: #b3b3b3;
 }
+
+@media (max-width: 900px) {
+  .security-protect {
+    padding: 88px 0;
+  }
+  .security-protect-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .security-protect {
+    padding: 64px 0;
+  }
+  .security-protect-item {
+    padding: 24px;
+  }
+  .security-protect-icon-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

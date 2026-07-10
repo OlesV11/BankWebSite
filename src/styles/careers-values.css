@@ -3,7 +3,6 @@
 }
 .careers-values__container {
   margin: 0 auto;
-  padding: 0 24px;
 }
 .careers-values__title {
   font-weight: 500;
@@ -35,7 +34,7 @@
   padding: 0 0 0 24px;
   min-width: 0;
   max-width: 610px;
-  height: 152px;
+  min-height: 152px;
   display: flex;
   flex-direction: column;
   /* gap: 20px; */
@@ -63,7 +62,17 @@
     gap: 28px;
   }
   .careers-values__card {
-    height: auto;
+    min-height: 0;
     padding-left: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-values-section {
+    padding-bottom: 72px;
+  }
+  .careers-values__title,
+  .careers-values__card-title {
+    font-size: 30px;
   }
 }

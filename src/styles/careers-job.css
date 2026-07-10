@@ -1,7 +1,5 @@
-іі.careers-job-section {
-  background: #fff;
+.careers-job-section {
   padding: 48px 0;
-  border-radius: 18px;
 }
 .careers-job__title {
   font-weight: 500;
@@ -48,7 +46,7 @@
 }
 .careers-job__item-desc {
   font-size: 1em;
-  color: #232923;
+  color: #b3b3b3;
 }
 .careers-job__item-btn {
   background: #caff33;
@@ -70,5 +68,14 @@
   .careers-job__list {
     flex-direction: column;
     gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-job__title {
+    font-size: 30px;
+  }
+  .careers-job__desc {
+    margin-bottom: 36px;
   }
 }

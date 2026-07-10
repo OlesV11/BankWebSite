@@ -79,3 +79,24 @@
   color: #caff33;
   border-color: #caff33;
 }
+
+@media (max-width: 768px) {
+  .frequently__grid {
+    grid-template-columns: 1fr;
+  }
+  .frequently__card {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .frequently__title {
+    font-size: 1.9rem;
+  }
+  .frequently__card {
+    padding: 22px 18px 24px;
+  }
+  .frequently__show-btn {
+    width: 100%;
+  }
+}

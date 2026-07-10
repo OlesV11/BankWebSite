@@ -33,7 +33,7 @@ export default function CareersPage() {
         <CareersJobCard />
       </div>
       <Frequently />
-      <Cta />
+      <Cta setSignupOpen={setSignupOpen} />
       <Footer />
     </>
   );

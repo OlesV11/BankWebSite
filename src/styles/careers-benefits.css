@@ -51,7 +51,16 @@
 
 @media (max-width: 900px) {
   .careers-benefits__list {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-benefits__item {
+    padding: 24px;
+  }
+  .careesr-benefits__thumb {
+    align-items: flex-start;
   }
 }

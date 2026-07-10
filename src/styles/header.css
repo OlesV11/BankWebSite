@@ -7,11 +7,14 @@
   padding: 32px 64px 24px 64px;
   background: #181c23;
   border-bottom: 1px solid #232834;
+  gap: 24px;
+  position: relative;
 }
 .header__logo {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 .header__brand {
   font-size: 1.5rem;
@@ -22,6 +25,13 @@
 .header__nav {
   display: flex;
   gap: 32px;
+}
+.header__panel {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  justify-content: space-between;
 }
 .header__nav a {
   color: #fff;
@@ -40,6 +50,26 @@
 .header__actions {
   display: flex;
   gap: 16px;
+}
+.header__menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #232834;
+  background: #232834;
+  border-radius: 12px;
+}
+.header__menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 999px;
 }
 .header__signup {
   background: transparent;
@@ -69,4 +99,65 @@
 }
 .header__login:hover {
   background: #b3e636;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 24px 40px;
+  }
+  .header__nav {
+    gap: 16px;
+  }
+  .header__nav a,
+  .header__signup,
+  .header__login {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 24px;
+    flex-wrap: wrap;
+  }
+  .header__menu-toggle {
+    display: flex;
+  }
+  .header__panel {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding-top: 16px;
+  }
+  .header__panel--open {
+    display: flex;
+  }
+  .header__nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .header__nav a {
+    display: block;
+    padding: 12px 14px;
+    background: #232834;
+  }
+  .header__actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .header__signup,
+  .header__login {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 16px;
+  }
+  .header__brand {
+    font-size: 1.2rem;
+  }
 }

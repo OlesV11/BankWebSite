@@ -4,16 +4,15 @@
 .security-bg {
   border-radius: 20px;
   padding: 40px;
-  width: 1279px;
-  height: 648px;
+  width: 100%;
+  min-height: 648px;
   background-color: #1c1c1c;
   position: relative;
 }
 .security-thumb {
   border-radius: 20px 0 60px 20px;
   padding: 60px;
-  width: 658px;
-  max-height: 384px;
+  width: min(100%, 658px);
   background-color: #1a1a1a;
   position: absolute;
   z-index: 1;
@@ -36,6 +35,38 @@
 .security-hero-img {
   position: absolute;
   top: 50%;
-  right: 400px;
+  right: min(32%, 400px);
   transform: translate(50%, -50%);
+}
+
+@media (max-width: 1024px) {
+  .security-bg {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: 0;
+  }
+  .security-thumb,
+  .security-hero-img {
+    position: static;
+    transform: none;
+  }
+  .security-hero-img {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .security-hero {
+    padding-top: 32px;
+  }
+  .security-bg,
+  .security-thumb {
+    padding: 20px;
+  }
+  .security-title {
+    font-size: 34px;
+  }
 }

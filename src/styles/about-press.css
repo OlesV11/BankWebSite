@@ -53,6 +53,7 @@
   display: flex;
   margin-bottom: 24px;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .about-press-location {
   border: 1px solid #262626;
@@ -85,4 +86,25 @@
   font-size: 16px;
   line-height: 1.5;
   color: #b3b3b3;
+}
+
+@media (max-width: 900px) {
+  .about-press-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-press-title {
+    font-size: 30px;
+  }
+  .about-press-content,
+  .about-press-item {
+    padding: 18px;
+  }
+  .about-press-location,
+  .about-press-date {
+    width: auto;
+  }
 }

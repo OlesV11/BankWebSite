@@ -36,7 +36,7 @@
   margin-bottom: 0;
 }
 .about-mission__card--reverse {
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 .about-mission__imgwrap {
   flex: 0 0 320px;
@@ -63,4 +63,31 @@
   font-size: 16px;
   line-height: 1.5;
   color: #b3b3b3;
+}
+
+@media (max-width: 900px) {
+  .about-mission {
+    padding: 88px 0;
+  }
+  .about-mission__card--horizontal,
+  .about-mission__card--reverse {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .about-mission__imgwrap {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-mission {
+    padding: 64px 0;
+  }
+  .about-mission__title {
+    font-size: 30px;
+  }
+  .about-mission__cardtitle {
+    font-size: 26px;
+  }
 }

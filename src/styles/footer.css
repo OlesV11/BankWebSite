@@ -23,6 +23,7 @@
   justify-content: center;
   gap: 32px;
   margin-bottom: 24px;
+  flex-wrap: wrap;
 }
 .footer__nav-link {
   color: #fff;
@@ -107,12 +108,29 @@
   color: #caff33;
 }
 @media (max-width: 900px) {
+  .footer__nav,
+  .footer__links {
+    justify-content: center;
+  }
   .footer__bottom {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    text-align: center;
   }
   .footer__container {
     padding: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__contacts,
+  .footer__links {
+    gap: 12px;
+  }
+  .footer__contact {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
   }
 }

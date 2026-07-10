@@ -2,6 +2,8 @@
   padding: 120px 0 0 0;
 }
 .cta__container {
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 36px 48px;
   display: flex;
   align-items: center;
@@ -56,5 +58,18 @@
   .cta__action {
     width: 100%;
     justify-content: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding-top: 72px;
+  }
+  .cta__container {
+    padding: 24px 18px;
+  }
+  .cta__action,
+  .cta__btn {
+    width: 100%;
   }
 }

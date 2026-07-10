@@ -1,11 +1,13 @@
 /* Основна секция продуктів */
 .products {
-  padding: 120px 0;
+  padding: 120px 0 80px;
 }
 
 /* Вступний блок */
 .products__thumb {
   display: flex;
+  gap: 24px;
+  align-items: flex-end;
   margin-bottom: 80px;
 }
 .products__intro {
@@ -35,8 +37,8 @@
   border: 1px solid #262626;
   border-radius: 82px;
   padding: 12px;
-  width: 299px;
-  height: 65px;
+  width: auto;
+  min-height: 65px;
   background-color: #1c1c1c;
   margin-left: auto;
   align-items: center;
@@ -71,10 +73,10 @@
   display: flex;
 }
 .products__list {
-  display: flex;
-  gap: 80px;
-}
-.products__item {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  width: 100%;
 }
 .products__icon__decor {
   background: linear-gradient(
@@ -102,7 +104,47 @@
   margin-bottom: 16px;
 }
 .products__item-desc {
-  width: 373px;
-  height: 166px;
+  width: 100%;
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .products {
+    padding: 96px 0 72px;
+  }
+  .products__thumb {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 48px;
+  }
+  .products__tabs {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  .products__list {
+    grid-template-columns: 1fr;
+  }
+  .products__item {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    padding: 72px 0 56px;
+  }
+  .products__title,
+  .products__title__span {
+    font-size: 30px;
+  }
+  .products__tabs {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .products__tab,
+  .products__tab__seco {
+    flex: 1 1 0;
+  }
 }

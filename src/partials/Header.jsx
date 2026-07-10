@@ -1,6 +1,6 @@
 import "../styles/header.css";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import SignUpModal from "./SignUpModal";
 import LoginModal from "./LoginModal";
 
@@ -10,6 +10,10 @@ export default function Header({
   loginOpen,
   setLoginOpen,
 }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <>
       <header className="header">
@@ -17,6 +21,7 @@ export default function Header({
           to="/"
           className="header__logo"
           style={{ textDecoration: "none", color: "inherit" }}
+          onClick={closeMenu}
         >
           <svg
             width="36"
@@ -40,22 +45,52 @@ export default function Header({
           </svg>
           <span className="header__brand">YourBanK</span>
         </Link>
-        <nav className="header__nav">
-          <Link to="/">Home</Link>
-          <Link to="/careers">Careers</Link>
-          <Link to="/about">About</Link>
-          <Link to="/security">Security</Link>
-        </nav>
-        <div className="header__actions">
-          <button
-            className="header__signup"
-            onClick={() => setSignupOpen(true)}
-          >
-            Sign Up
-          </button>
-          <button className="header__login" onClick={() => setLoginOpen(true)}>
-            Login
-          </button>
+        <button
+          type="button"
+          className="header__menu-toggle"
+          aria-expanded={menuOpen}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div className={`header__panel${menuOpen ? " header__panel--open" : ""}`}>
+          <nav className="header__nav">
+            <Link to="/" onClick={closeMenu}>
+              Home
+            </Link>
+            <Link to="/careers" onClick={closeMenu}>
+              Careers
+            </Link>
+            <Link to="/about" onClick={closeMenu}>
+              About
+            </Link>
+            <Link to="/security" onClick={closeMenu}>
+              Security
+            </Link>
+          </nav>
+          <div className="header__actions">
+            <button
+              className="header__signup"
+              onClick={() => {
+                closeMenu();
+                setSignupOpen(true);
+              }}
+            >
+              Sign Up
+            </button>
+            <button
+              className="header__login"
+              onClick={() => {
+                closeMenu();
+                setLoginOpen(true);
+              }}
+            >
+              Login
+            </button>
+          </div>
         </div>
       </header>
       <SignUpModal
